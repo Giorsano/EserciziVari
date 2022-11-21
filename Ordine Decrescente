@@ -1,0 +1,23 @@
+
+import java.util.Scanner;
+
+
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Dammi un numero e ti darò la lista dei numeri naturali fino al numero scelto");
+        int a = scanner.nextInt();
+        scanner.nextLine();
+        if(a < 10000) {
+            System.out.println("ERRORE: inserire un numero a 5 cifre");
+            scanner.close();
+        }
+
+      for(int i = a; i >= 150 ; i--){
+          System.out.println(i);
+      }
+
+    }
+
+}
