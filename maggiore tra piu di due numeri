@@ -1,0 +1,59 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Dammi un numero");
+        int a = scanner.nextInt();
+        if ( a == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int b = scanner.nextInt();
+        if ( b == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int c = scanner.nextInt();
+        if ( c == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int d = scanner.nextInt();
+        if ( d == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int e = scanner.nextInt();
+        if ( e == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int f = scanner.nextInt();
+        if ( f == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int g = scanner.nextInt();
+        if ( g == 0){
+            scanner.close();
+        }
+        System.out.println("Dammi un numero");
+        int h = scanner.nextInt();
+        if ( h == 0){
+            scanner.close();
+        }
+        int[] array = new int[8];
+        array[0] = a;
+        array[1] = b;
+        array[2] = c;
+        array[3] = d;
+        array[4] = e;
+        array[5] = f;
+        array[6] = g;
+        array[7] = h;
+        System.out.println(Arrays.stream(array).max());
+
+    }
+}
