@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 50;
+        int b = 60;
+        int c = 80;
+
+        if(b < c && b > a){
+            System.out.println(b + " è compreso tra i numeri: " + a + " e " + c);
+        }
+        else {
+            System.out.println(b + " non è compreso tra i numeri: "+ a + " e " + c);
+        }
+    }
+}
