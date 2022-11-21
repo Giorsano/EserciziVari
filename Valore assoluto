@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Dammi un numero e ti troverò il suo valore assoluto");
+        int a = scanner.nextInt();
+        scanner.nextLine();
+        System.out.println("Il valore assoluto è: "+ Math.abs(a));
+    }
+}
