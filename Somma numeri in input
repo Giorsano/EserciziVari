@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Dammi un numero");
+        int a = scanner.nextInt();
+        scanner.nextLine();
+        if( a == 0){
+            System.out.println("Non puoi dare un numero uguale a 0, ma solo superiore");
+            scanner.close();
+        }
+        System.out.println("Dammi un secondo numero");
+        int b = scanner.nextInt();
+        scanner.nextLine();
+        if (b == 0) {
+            System.out.println("Non puoi dare un numero uguale a 0, ma solo superiore");
+            scanner.close();
+        }
+        System.out.println("Dammi un terzo numero");
+        int c = scanner.nextInt();
+        scanner.nextLine();
+        if (c == 0) {
+            System.out.println("Non puoi dare un numero uguale a 0, ma solo superiore");
+            scanner.close();
+        }
+        else {
+            System.out.println("La somma dei numeri da te dati è: " + (a + b +c));
+        }
+
+    }
+}
