@@ -1,15 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-    int a = 10;
-    int b = 20;
-    int x = 30;
-    int c = 40;
+        int a = 10;
+        int b = 20;
+        int c = 30;
+        int x = 40;
 
-    int moltiplicazione1 = a * x;
-    int potenza = (int) Math.pow(moltiplicazione1, 2);
-    int moltiplicazione2 = b * x;
-    int equazione = potenza + moltiplicazione2 + c;
+        //equazione ax^2 + bx + c =0
+        int equazione = (int) (-b +-(Math.sqrt(((int) Math.pow(b, 2)) - 4 * a * c)) / (2*a));
         System.out.println(equazione);
-
     }
 }
