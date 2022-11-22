@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        // CREIAMO UN ARRAY DI INTERI
+        int[] array1 = {10, 20, 30, 40};
+        for(int i = 0; i < array1.length; i++){
+            System.out.println(i);
+
+        }
+        array1 = RimuoviElemento(array1, 2);
+        System.out.println(Arrays.toString(array1));
+
+
+    }
+    public static int[] RimuoviElemento(int[] lista, int indice) {
+        int[] arrayRisultato = new int[lista.length - 1];
+        System.arraycopy(lista, 0, arrayRisultato, 0, indice);
+        if (lista.length != indice) {
+            System.arraycopy(lista, indice + 1, arrayRisultato, indice, lista.length - indice - 1);
+
+        }
+        return arrayRisultato;
+    }
+    }
